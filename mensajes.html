@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>SmallSoft ML System (?)</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->
+  <link href="css/custom/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+</head>
+
+<body>
+  <!-- Start Page Loading
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color light-blue accent-4">
+                <div class="nav-wrapper">
+                    <ul class="left">
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
+                    </ul>
+
+
+                    <!-- translation-button -->
+
+                    <!-- notifications-dropdown -->
+
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+            <div class="row">
+                <div class="col col s4 m4 l4">
+                    <img src="images/avatar-usuario.png" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+
+                    <p class="   white-text profile-btn" href="#" >Tu Usuario </p>
+                    <p class="user-roal">Tu rol</p>
+                </div>
+            </div>
+            </li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-home"></i> Inicio</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Gestión de Publicaciones</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gestion-manual.html">Item 1</a>
+                                </li>
+                                <li><a href="gestion-manual.html">Item 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="bold"><a href="mensajes.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mensajes <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-settings"></i> Configuración</a>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Resumen</a>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> Mi perfil</a>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-hardware-keyboard-tab"></i> Salir</a>
+            </li>
+
+
+
+
+
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+        </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+
+
+
+
+        <!--start container-->
+            <div class="row">
+        <img class="responsive-img" src="images/mensajestop.png" style="width:100%">
+</div>
+
+
+
+
+
+
+        <div class="container">
+          <a class="waves-effect waves-light btn blue" id="finalizar">Obtener Mensajes de Publicación</a>
+          <a class="waves-effect waves-light btn purple darken-4" id="finalizar">Obtener Mensajes Vendedor</a>
+          <a class="waves-effect waves-light btn red" id="finalizar">Importar Mensajes a Bd</a>
+
+
+
+
+<br> <br>
+
+
+
+              <div class="col s12">
+                <div class="col s12">
+
+                  <table class="highlight responsive-table">
+                    <thead>
+                      <tr>
+                          <th>Remitente</th>
+                          <th>Id Publicación - Título</th>
+                          <th>Mensaje</th>
+                          <th>Estado</th>
+                          <th>Respuesta </th>
+                          <th>Acción </th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+                        <td>Juan Pablo Paillet</td>
+                        <td>ML2891123 - Contenedor 1</td>
+                        <td>Hacen envíos al interior??</td>
+                          <td>Sin Responder</td>
+                            <td>
+                            -
+
+
+                            </td>
+                                  <td>
+
+
+     <a class="waves-effect waves-light btn light-blue darken-4 modal-trigger" id="respuesta" href="#modal2">Responder</a>
+
+
+
+
+   </td>
+                      </tr>
+                      <tr>
+                        <td>Jorge Gonzales</td>
+                        <td>ML2891123 - Contenedor 1</td>
+                        <td>Hacen envíos a Córdoba??</td>
+                          <td>Sin Responder</td>
+                            <td>
+                            -
+
+
+                            </td>
+                                  <td>
+
+
+     <a class="waves-effect waves-light btn light-blue darken-4 modal-trigger" id="respuesta" href="#modal3">Responder</a>
+
+
+
+
+   </td>
+                      </tr>
+                      <tr>
+                        <td>Jorge Gomez</td>
+                        <td>ML2891123 - Contenedor 1</td>
+                        <td>Testeo de Preguntas con la Modal 1</td>
+                          <td>Sin Responder</td>
+                            <td>
+                            -
+
+
+                            </td>
+                                  <td>
+
+
+     <a class="waves-effect waves-light btn light-blue darken-4 modal-trigger" id="respuesta" href="#modal4">Responder</a>
+
+
+
+
+   </td>
+                      </tr>
+                      <tr>
+                        <td>Francisco Smallsoft</td>
+                        <td>ML2891123 - Contenedor 1</td>
+                        <td>Testeo de preguntas con otra modal</td>
+                          <td>Sin Responder</td>
+                            <td>
+                            -
+
+
+                            </td>
+                                  <td>
+
+
+     <a class="waves-effect waves-light btn light-blue darken-4 modal-trigger" id="respuesta" href="#modal5">Responder</a>
+
+
+
+
+   </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                      <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left "></i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
+                      </ul>
+
+
+
+                      <div id="modal2" class="modal bottom-sheet">
+                                    <div class="modal-content">
+                                      <h4>Responder Mensaje</h4>
+                                <div class="container">
+
+<p> Pregunta: ¿Hacen envíos al interior?</p>
+<div class="input-field col s10">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Ingrese aquí su respuesta</label>
+    </div>
+    <div class="col s2">
+
+      <button class="btn waves-effect waves-light light-blue darken-4 modal-close" type="submit" name="action">Enviar
+        <i class="material-icons right">send</i>
+      </button>    </div>
+                                </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div id="modal3" class="modal bottom-sheet">
+                                                <div class="modal-content">
+                                                  <h4>Responder Mensaje</h4>
+                                            <div class="container">
+
+            <p> Pregunta: ¿Hacen envíos a Córdoba?</p>
+            <div class="input-field col s10">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Ingrese aquí su respuesta</label>
+                </div>
+                <div class="col s2">
+
+                  <button class="btn waves-effect waves-light light-blue darken-4 modal-close" type="submit" name="action">Enviar
+                    <i class="material-icons right">send</i>
+                  </button>    </div>
+                                            </div>
+                                                </div>
+                                              </div>
+
+                                              <div id="modal4" class="modal bottom-sheet">
+                                                            <div class="modal-content">
+                                                              <h4>Responder Mensaje</h4>
+                                                        <div class="container">
+
+                                        <p> Testeo de Preguntas con la Modal 1</p>
+                                        <div class="input-field col s10">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Ingrese aquí su respuesta</label>
+                                        </div>
+                                        <div class="col s2">
+
+                                        <button class="btn waves-effect waves-light light-blue darken-4 modal-close" type="submit" name="action">Enviar
+                                        <i class="material-icons right">send</i>
+                                        </button>    </div>
+                                                        </div>
+                                                            </div>
+                                                          </div>
+
+
+                                                          <div id="modal5" class="modal bottom-sheet">
+                                                                        <div class="modal-content">
+                                                                          <h4>Pregunta: Testeo de Preguntas con otra modal</h4>
+                                                                          <div class="divider"> </div>
+                                                                    <div class="container">
+
+                                                    <p> </p>
+                                                    <div class="input-field col s10">
+                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Ingrese aquí su respuesta</label>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                      <button class="btn waves-effect waves-light light-blue darken-4 modal-close" type="submit" name="action">Enviar
+                                                      <i class="material-icons right">send</i>
+                                                      </button>                                                           </div>
+
+
+
+                                                                    </div>
+                                                                        </div>
+                                                                      </div>
+
+                </div>
+
+
+              </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+          <!-- Floating Action Button -->
+
+            <!-- Floating Action Button -->
+        </div>
+        <!--end container-->
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START RIGHT SIDEBAR NAV-->
+
+      <!-- LEFT RIGHT SIDEBAR NAV-->
+
+    </div>
+    <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer yellow accent-2">
+    <div class="footer-copyright">
+      <div class="container">
+        <span style="color:black">Copyright © 2017 <a class="grey-text " href="http://smallsoft.com.ar" target="_blank">SmallSoft</a> Derechos reservados.</span>
+
+        </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism
+    <script type="text/javascript" src="js/prism/prism.js"></script>-->
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="js/plugins/data-tables/data-tables-script.js"></script>
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+
+</body>
+
+</html>

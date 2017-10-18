@@ -1,0 +1,133 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background: rgba(73,155,234,1);
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(94,172,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(94,172,255,1)));
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(94,172,255,1) 100%);
+background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(94,172,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(94,172,255,1) 100%);
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(94,172,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#5eacff', GradientType=0 );
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    body {
+    }
+
+    .input-field input[type=date]:focus + label,
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=email]:focus + label,
+    .input-field input[type=password]:focus + label {
+      color: #1a237e;
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+      border-bottom: 2px solid #1a237e;
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body >
+  <div class="section"></div>
+  <main>
+    <center>
+      <div class="section" style="max-width: 30%;margin:0px auto">
+<img style="max-width: 30%" src="images/logosm.png">
+
+      </div>
+
+      
+      <div class="section"></div>
+
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; border-radius:20px">
+            <h5 class="">Ingresar al sistema</h5>
+          <form class="col s12" method="post">
+            <div class='row'>
+              <div class='col s12'>
+
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='text' name='user' id='user' />
+                <label for='email'>Ingrese su usuario/mail</label>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='password' name='password' id='password' />
+                <label for='password'>Ingrese su contraseña</label>
+              </div>
+              <label style='float: right;'>
+								<a class='grey-text' href='#!'><b>¿Olvidaste tu contraseña?</b></a>
+							</label>
+            </div>
+
+            <br />
+            <center>
+              <div class='row'  href="index.html">
+                <a class="col s12 btn btn-large waves-effect indigo" id="respuesta" href="index.html">Ingresar</a>
+
+              </div>
+            </center>
+            <center>
+              <div class='row'>
+                <button name='btn_login' class='col s12 btn btn-large waves-effect indigo disabled'>Crear Cuenta</button>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
+    </center>
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</body>
+<footer class="page-footer  blue lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="dark-text">Pié de página</h5>
+            <p class="dark-text">Descripción de la empresa.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="dark-text">Links </h5>
+            <ul>
+              <li><a style="color:black!important" class="dark-text" href="#!">Link 1</a></li>
+              <li><a style="color:black!important" class="dark-text" href="#!">Link 2</a></li>
+              <li><a style="color:black!important" class="dark-text" href="#!">Link 3</a></li>
+              <li><a style="color:black!important" class="dark-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container" style="color:black!important">
+        © 2017 SmallSoft App
+        <a style="color:black!important" class="dark-text right" href="#!">Visita nuestro sitio</a>
+        </div>
+      </div>
+    </footer>
+</html>
